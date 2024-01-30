@@ -20,6 +20,7 @@ Future<void> main() async {
   await WindowManipulator.initialize(enableWindowDelegate: true);
   WindowManipulator.makeTitlebarTransparent();
   WindowManipulator.enableFullSizeContentView();
+  WindowManipulator.hideTitle();
 
   appWindow.size = const Size(600, 450);
   runApp(const MainApp());
